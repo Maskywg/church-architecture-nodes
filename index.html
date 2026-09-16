@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>教堂建築節點手冊｜從歐洲到芬蘭</title>
+<meta name="description" content="以《30分鐘看懂歐洲教堂》與《西方建築風格速通》兩支影片為主軸，拆解出圓頂、尖塔鐘樓、彩窗、壁畫、立面浮雕、平面格局六個建築節點，對齊從古典到現代主義的風格時間軸，並插件比對天主教、東正教、新教／路德宗、聖公會的實際案例，最後用芬蘭赫爾辛基三座教堂實測驗證。">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="教堂建築節點手冊｜從歐洲到芬蘭">
+<meta property="og:description" content="拆解歐洲教堂的六個建築節點，插件比對天主教／東正教／新教／聖公會，並用芬蘭三座教堂實測。">
+<meta property="og:image" content="https://maskywg.github.io/church-architecture-nodes/og-image.jpg">
+<meta property="og:url" content="https://maskywg.github.io/church-architecture-nodes/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="教堂建築節點手冊｜從歐洲到芬蘭">
+<meta name="twitter:description" content="拆解歐洲教堂的六個建築節點，插件比對天主教／東正教／新教／聖公會，並用芬蘭三座教堂實測。">
+<meta name="twitter:image" content="https://maskywg.github.io/church-architecture-nodes/og-image.jpg">
+
+<style>
+:root{
+  --ink:#14202b; --muted:#5c6974; --paper:#f5f2ea; --card:#fffdf8;
+  --blue:#245d78; --blue2:#173f55; --copper:#6f8d7a; --brick:#8d493c;
+  --line:#d9d5ca; --gold:#b4945c; --shadow:0 14px 40px rgba(20,32,43,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.75}
+a{color:inherit}
+.wrap{width:min(1180px,92vw);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(245,242,234,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(20,32,43,.08)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;padding:12px 0;gap:20px}
+.brand{font-weight:800;letter-spacing:.04em}
+.links{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
+.links a{text-decoration:none;color:var(--muted)}
+.hero{min-height:74vh;display:grid;place-items:center;padding:60px 0 30px}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:44px;align-items:center}
+.eyebrow{color:var(--blue);font-weight:800;letter-spacing:.18em;font-size:13px;text-transform:uppercase}
+h1{font-size:clamp(38px,5.4vw,70px);line-height:1.08;margin:14px 0 18px;letter-spacing:-.03em}
+.lead{font-size:clamp(17px,1.9vw,21px);color:var(--muted);max-width:760px}
+.hero-note{display:inline-flex;gap:10px;align-items:center;margin-top:20px;padding:11px 14px;border:1px solid var(--line);border-radius:999px;background:#fff8;font-size:14px}
+.hero-collage{position:relative;min-height:480px}
+.hero-collage .img{position:absolute;border-radius:26px;overflow:hidden;box-shadow:var(--shadow);border:5px solid rgba(255,255,255,.7)}
+.hero-collage img{width:100%;height:100%;object-fit:cover;display:block}
+.i1{width:66%;height:56%;left:0;top:0;transform:rotate(-2deg)}
+.i2{width:58%;height:50%;right:0;top:22%;transform:rotate(2deg)}
+.i3{width:54%;height:38%;left:14%;bottom:0;transform:rotate(1deg)}
+section{padding:70px 0}
+.sec-title{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start;margin-bottom:34px}
+.sec-title h2{font-size:clamp(28px,3.6vw,46px);line-height:1.15;margin:0}
+.sec-title p{margin:0;color:var(--muted);font-size:17px}
+.source-strip{display:flex;gap:16px;align-items:center;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px 24px;box-shadow:0 6px 18px rgba(20,32,43,.04)}
+.source-strip .play{width:46px;height:46px;border-radius:50%;background:var(--blue2);color:#fff;display:grid;place-items:center;flex:none;font-size:18px}
+.source-strip b{font-size:16px}
+.source-strip span{color:var(--muted);font-size:14px}
+.source-strip a{color:var(--blue);font-weight:700;text-decoration:none;font-size:14px;white-space:nowrap}
+
+.nodes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.node{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 6px 18px rgba(20,32,43,.04);position:relative}
+.node .tag{font-size:12px;font-weight:900;color:#fff;background:var(--blue);display:inline-block;padding:4px 10px;border-radius:999px;letter-spacing:.08em}
+.node h3{margin:14px 0 8px;font-size:22px}
+.node p{color:var(--muted);margin:0 0 10px}
+.node .clip{font-size:13px;color:var(--gold);font-weight:700;margin-bottom:8px}
+.vlinks{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 0}
+.vlink{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:700;color:var(--blue2);background:#e2ecf1;border:1px solid #cddbe0;border-radius:999px;padding:5px 10px;text-decoration:none;white-space:nowrap}
+.vlink:hover{background:#d3e3ea}
+.vlink b{font-weight:900;font-variant-numeric:tabular-nums}
+
+.schism{border:1px solid var(--line);border-radius:22px;background:var(--card);padding:30px 30px 20px;box-shadow:0 6px 18px rgba(20,32,43,.04)}
+.schism-scroll{overflow-x:auto}
+.schism-scroll svg{display:block;width:100%;min-width:760px;height:auto}
+.schism-note{font-size:13px;color:var(--muted);margin-top:10px}
+
+.matrix{overflow:auto;border:1px solid var(--line);border-radius:22px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:900px}
+th,td{padding:16px 18px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left;font-size:14.5px}
+th{background:#ece8de;font-size:13px;letter-spacing:.03em}
+td:first-child{font-weight:800;width:14%;color:var(--blue2)}
+
+.charts{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:36px}
+.chart-card{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
+.chart-card img{width:100%;display:block}
+.chart-card figcaption{padding:16px 20px;color:var(--muted);font-size:14px}
+.chart-card figcaption b{color:var(--ink);display:block;margin-bottom:4px;font-size:15px}
+
+.timeline{position:relative;margin-top:20px}
+.timeline:before{content:"";position:absolute;left:18px;top:5px;bottom:5px;width:2px;background:var(--line)}
+.t{position:relative;padding-left:56px;margin:0 0 28px}
+.t:before{content:"";position:absolute;left:11px;top:9px;width:16px;height:16px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 7px var(--paper)}
+.t b{display:block;font-size:19px}
+.t span{color:var(--muted)}
+
+.case{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center;margin:46px 0 74px}
+.case:nth-child(even) .photo{order:2}
+.photo{border-radius:28px;overflow:hidden;min-height:410px;box-shadow:var(--shadow);background:#ddd}
+.photo img{width:100%;height:100%;min-height:410px;object-fit:cover;display:block}
+.kicker{font-size:12px;font-weight:900;letter-spacing:.16em;color:var(--blue)}
+.case h3{font-size:clamp(28px,3.6vw,44px);line-height:1.1;margin:8px 0 14px}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 18px}
+.pill{padding:7px 11px;border-radius:999px;background:#e8ece9;font-size:13px;font-weight:700}
+.pill.node-pill{background:#e2ecf1;color:var(--blue2)}
+.clue{border-left:4px solid var(--gold);padding-left:16px;margin:18px 0;color:var(--muted)}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.warn{background:#173f55;color:white;border-radius:26px;padding:32px}
+.warn h3{font-size:26px;margin-top:0}
+.warn p{color:#dce6eb}
+.good{background:#edf1ec;border:1px solid #d3ddd5;border-radius:26px;padding:32px}
+.good h3{font-size:26px;margin-top:0}
+
+.quote{font-size:clamp(26px,3.6vw,46px);line-height:1.3;text-align:center;max-width:920px;margin:0 auto;color:var(--blue2);font-weight:800}
+.sources{font-size:13px;color:var(--muted)}
+.sources a{color:var(--blue)}
+footer{padding:36px 0 54px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+
+@media (max-width:820px){
+  .hero-grid,.sec-title,.case,.split,.charts{grid-template-columns:1fr}
+  .hero-collage{min-height:400px;margin-top:12px}
+  .nodes{grid-template-columns:1fr}
+  .case:nth-child(even) .photo{order:0}
+  nav .links{display:none}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <div class="brand">CHURCH × NODES</div>
+    <div class="links">
+      <a href="#nodes">建築節點</a><a href="#styles">風格辨識</a><a href="#schism">教派時間軸</a><a href="#matrix">跨教派插件</a><a href="#finland">芬蘭實測</a><a href="#method">判讀方法</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Architecture · Faith · Field Test</div>
+      <h1>尖塔、圓頂、彩窗——<br>同樣的語彙，說著不同的信仰。</h1>
+      <p class="lead">一支 30 分鐘的歐洲教堂科普影片，整理出一組教堂之間彼此互通的建築語彙：尖塔鐘樓、圓頂、彩窗、壁畫、立面浮雕、平面格局。這頁把六個語彙抽出來，分別放進天主教、東正教、新教／路德宗、聖公會的脈絡裡比對，最後再拿芬蘭赫爾辛基三座教堂做實地驗證。</p>
+      <div class="hero-note">✦ 核心觀念：語彙可以共用，信仰各自把它說成自己的故事</div>
+    </div>
+    <div class="hero-collage" aria-label="影片提及的三座代表性教堂">
+      <div class="img i1"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg" alt="巴黎聖母院"></div>
+      <div class="img i2"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg" alt="佛羅倫斯聖母百花大教堂圓頂"></div>
+      <div class="img i3"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Sistine_Chapel_ceiling_02_%28brightened%29.jpg" alt="西斯汀禮拜堂穹頂壁畫"></div>
+    </div>
+  </div>
+</header>
+
+<section id="video">
+  <div class="wrap">
+    <div class="source-strip">
+      <div class="play">▶</div>
+      <div style="flex:1;min-width:220px">
+        <b>資料主軸：《30分鐘看懂歐洲教堂｜讀懂教堂｜歐洲建築史》</b><br>
+        <span>小白豆干看世界・YouTube・約 32 分鐘。內容涵蓋羅馬帝國東西分裂、拜占庭與君士坦丁堡、羅馬式／哥德式／文藝復興／巴洛克風格演變、聖伯多祿大殿、西斯汀禮拜堂壁畫與透視法、宗教改革後新教教堂的簡樸化、聖德尼大教堂的王室墓葬功能等。</span>
+      </div>
+      <a href="https://youtu.be/-LvvLj5Qeug" target="_blank" rel="noopener">看原始影片 ↗</a>
+    </div>
+    <div style="height:18px"></div>
+    <div class="vlinks" style="justify-content:flex-start">
+      <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=250" target="_blank" rel="noopener">▶ <b>04:10</b> NODE05 立面浮雕</a>
+      <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=300" target="_blank" rel="noopener">▶ <b>05:00</b> NODE01 尖塔鐘樓</a>
+      <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=400" target="_blank" rel="noopener">▶ <b>06:40</b> NODE02 圓頂</a>
+      <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=650" target="_blank" rel="noopener">▶ <b>10:50</b> NODE06 平面格局</a>
+      <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=1050" target="_blank" rel="noopener">▶ <b>17:30</b> NODE03 彩窗</a>
+      <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=1150" target="_blank" rel="noopener">▶ <b>19:10</b> NODE04 壁畫</a>
+      <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=1450" target="_blank" rel="noopener">▶ <b>24:10</b> 新教簡樸化</a>
+      <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=1850" target="_blank" rel="noopener">▶ <b>30:50</b> NODE06 聖德尼墓葬</a>
+    </div>
+  </div>
+</section>
+
+<section id="nodes" style="background:#ebe8df">
+  <div class="wrap">
+    <div class="sec-title">
+      <h2>從影片裡拆出六個節點</h2>
+      <p>影片開場就點題：「尖塔、穹頂、彩窗、鐘聲」。往下看完整支影片，會發現它其實還有壁畫／透視法、立面浮雕、平面格局與功能三個沒有明說、但貫穿全片的節點。這六個，就是接下來要「插件」到各教派身上的基本零件。</p>
+    </div>
+    <div class="nodes">
+      <div class="node">
+        <span class="tag">NODE 01</span>
+        <h3>尖塔與鐘樓</h3>
+        <p>垂直地標，決定城市天際線，也負責報時、召喚會眾。哥德式尖塔最戲劇化，但新古典、路德宗、聖公會同樣大量使用。</p>
+        <p class="clip">影片節點連結：</p>
+        <div class="vlinks">
+          <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=300" target="_blank" rel="noopener">▶ <b>05:00</b> 哥德塔樓空拍</a>
+          <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=350" target="_blank" rel="noopener">▶ <b>05:50</b> 巴黎聖母院雙塔</a>
+        </div>
+      </div>
+      <div class="node">
+        <span class="tag">NODE 02</span>
+        <h3>圓頂</h3>
+        <p>結構工程與「天堂意象」的結合。文藝復興把圓頂推到極致，東正教把它變成洋蔥形的多圓頂群，現代路德宗甚至用一圈銅頂取代整個屋頂。</p>
+        <p class="clip">影片節點連結：</p>
+        <div class="vlinks">
+          <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=400" target="_blank" rel="noopener">▶ <b>06:40</b> 佛羅倫斯圓頂／文藝復興風格</a>
+          <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=550" target="_blank" rel="noopener">▶ <b>09:10</b> 聖伯多祿大殿「集大成」</a>
+        </div>
+      </div>
+      <div class="node">
+        <span class="tag">NODE 03</span>
+        <h3>彩窗</h3>
+        <p>影片說「象徵與信仰構成的世界」——彩窗在識字率低的年代負責說故事、教教義（洗禮、聖經場景），新教改革後則傾向透明玻璃、去除圖像。</p>
+        <p class="clip">影片節點連結：</p>
+        <div class="vlinks">
+          <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=1050" target="_blank" rel="noopener">▶ <b>17:30</b> 玫瑰窗／象徵與信仰</a>
+          <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=1650" target="_blank" rel="noopener">▶ <b>27:30</b> 洗禮主題彩窗</a>
+        </div>
+      </div>
+      <div class="node">
+        <span class="tag">NODE 04</span>
+        <h3>壁畫與穹頂畫</h3>
+        <p>米開朗基羅的西斯汀禮拜堂穹頂畫，示範了線性透視如何被「嚴謹地運用在大型宗教繪畫中」。東正教則發展出聖像畫與聖像屏風系統；新教普遍拿掉具象壁畫。</p>
+        <p class="clip">影片節點連結：</p>
+        <div class="vlinks">
+          <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=1150" target="_blank" rel="noopener">▶ <b>19:10</b> 創造亞當／畫家技法</a>
+          <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=1250" target="_blank" rel="noopener">▶ <b>20:50</b> 透視法示意</a>
+          <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=1550" target="_blank" rel="noopener">▶ <b>25:50</b> 西斯汀穹頂全景</a>
+        </div>
+      </div>
+      <div class="node">
+        <span class="tag">NODE 05</span>
+        <h3>立面與大門浮雕</h3>
+        <p>羅馬式教堂在入口拱門上做敘事浮雕，是「羅馬式建築裝飾的典型代表」；哥德立面把它放大，現代路德宗（如磐石教堂）則反過來，直接用天然岩壁取代所有裝飾立面。</p>
+        <p class="clip">影片節點連結：</p>
+        <div class="vlinks">
+          <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=250" target="_blank" rel="noopener">▶ <b>04:10</b> 羅馬式拱門浮雕</a>
+        </div>
+      </div>
+      <div class="node">
+        <span class="tag">NODE 06</span>
+        <h3>平面格局與功能</h3>
+        <p>教堂不只是拜堂，也可能是王室墓葬地——「這是法國聖德尼大教堂中」的皇家陵墓群，說明平面格局常常跟著功能（加冕、安葬、講道）走，而不是單純的美學選擇。</p>
+        <p class="clip">影片節點連結：</p>
+        <div class="vlinks">
+          <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=650" target="_blank" rel="noopener">▶ <b>10:50</b> 拜占庭／君士坦丁堡中心</a>
+          <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=1850" target="_blank" rel="noopener">▶ <b>30:50</b> 聖德尼大教堂王室墓葬</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="styles">
+  <div class="wrap">
+    <div class="sec-title">
+      <h2>光看外觀，怎麼一眼認出時代？</h2>
+      <p>第二支參考影片專門講「怎麼一眼辨識建築風格」，把六個節點放進更長的時間軸——從古希臘柱式到現代主義，等於是本頁節點框架的時代座標。</p>
+    </div>
+    <div class="source-strip">
+      <div class="play">▶</div>
+      <div style="flex:1;min-width:220px">
+        <b>延伸資料源：《西方建築風格速通！一眼識別各種建築風格，歐洲旅行不發愁！》</b><br>
+        <span>小鳴說・YouTube・約 20 分鐘。逐一講解古典、早期基督教、拜占庭、伊斯蘭、羅曼式、哥特式、文藝復興、巴洛克、洛可可、新古典主義到現代主義的外觀辨識重點。</span>
+      </div>
+      <a href="https://youtu.be/vsiOxHxX5t8" target="_blank" rel="noopener">看原始影片 ↗</a>
+    </div>
+
+    <div style="height:30px"></div>
+
+    <div class="timeline">
+      <div class="t">
+        <b>古典建築｜西元前9世紀–476年（古希臘＋古羅馬）</b>
+        <span>希臘建立「柱式＋比例」範式：多立克（簡潔粗壯）、愛奧尼亞（柱頭漩渦）、科林斯（茛苕葉柱頭）。羅馬最大突破是「拱」——拱延伸成拱頂、交叉拱頂，轉一圈變穹頂，代表作是羅馬鬥獸場與萬神殿。</span>
+        <div class="vlinks">
+          <a class="vlink" href="https://youtu.be/vsiOxHxX5t8?t=99" target="_blank" rel="noopener">▶ <b>01:39</b> 三種柱式怎麼分</a>
+          <a class="vlink" href="https://youtu.be/vsiOxHxX5t8?t=225" target="_blank" rel="noopener">▶ <b>03:45</b> 羅馬拱的各種變形</a>
+        </div>
+      </div>
+      <div class="t">
+        <b>早期基督教建築｜3世紀末–6世紀初</b>
+        <span>核心只有一個：長方形大廳的「巴西利卡」，或圓形／八角形大廳的「集中式教堂」，兩者都大量沿用羅馬拱與柱式，是後面所有教堂平面的共同祖先。</span>
+        <div class="vlinks">
+          <a class="vlink" href="https://youtu.be/vsiOxHxX5t8?t=315" target="_blank" rel="noopener">▶ <b>05:15</b> 巴西利卡：長方形大廳</a>
+        </div>
+      </div>
+      <div class="t">
+        <b>拜占庭建築｜中世紀代表風格</b>
+        <span>古羅馬建築與西亞風格的混血——在方形空間上架設穹頂（帆拱結構），聖索菲亞大教堂是最典型代表；平面多為集中式、四面都是正面，沒有固定朝向。</span>
+        <div class="vlinks">
+          <a class="vlink" href="https://youtu.be/vsiOxHxX5t8?t=409" target="_blank" rel="noopener">▶ <b>06:49</b> 方形空間上的穹頂</a>
+          <a class="vlink" href="https://youtu.be/vsiOxHxX5t8?t=449" target="_blank" rel="noopener">▶ <b>07:29</b> 聖索菲亞大教堂</a>
+        </div>
+      </div>
+      <div class="t">
+        <b>伊斯蘭建築｜與拜占庭並存互相影響</b>
+        <span>最好認的三個特徵：尖拱、洋蔥穹頂、宣禮塔，牆面常鋪滿抽象花紋馬賽克；不少清真寺其實是拜占庭教堂改建而成，兩者常常混淆。</span>
+        <div class="vlinks">
+          <a class="vlink" href="https://youtu.be/vsiOxHxX5t8?t=550" target="_blank" rel="noopener">▶ <b>09:10</b> 尖拱與洋蔥穹頂</a>
+          <a class="vlink" href="https://youtu.be/vsiOxHxX5t8?t=566" target="_blank" rel="noopener">▶ <b>09:26</b> 宣禮塔</a>
+        </div>
+      </div>
+      <div class="t">
+        <b>羅曼式建築｜10–12世紀</b>
+        <span>「像羅馬的」：牆厚窗小、敦實得像城堡；教堂平面呈拉丁十字，有明確的前後方向（跟拜占庭的集中式不同），正面常見兩座對稱鐘塔——呼應 NODE 01 尖塔與鐘樓。</span>
+        <div class="vlinks">
+          <a class="vlink" href="https://youtu.be/vsiOxHxX5t8?t=608" target="_blank" rel="noopener">▶ <b>10:08</b> 牆厚窗小的羅曼式</a>
+        </div>
+      </div>
+      <div class="t">
+        <b>哥特式建築｜12–15世紀</b>
+        <span>最戲劇化的中世紀風格：尖拱、肋拱頂、束柱、巨大花窗，外側靠飛扶壁撐住拱頂的側推力，巴黎聖母院、科隆大教堂都是代表——同時對應 NODE 01 尖塔與 NODE 03 彩窗。</span>
+        <div class="vlinks">
+          <a class="vlink" href="https://youtu.be/vsiOxHxX5t8?t=661" target="_blank" rel="noopener">▶ <b>11:01</b> 尖拱・肋拱・束柱</a>
+          <a class="vlink" href="https://youtu.be/vsiOxHxX5t8?t=695" target="_blank" rel="noopener">▶ <b>11:35</b> 飛扶壁怎麼運作</a>
+        </div>
+      </div>
+      <div class="t">
+        <b>文藝復興｜14–16世紀</b>
+        <span>致敬古典、但用透視法與數學比例把建築「理性化」；聖彼得大教堂純磚石砌成的穹頂，是這個時代的技術巔峰代表——對應 NODE 02 圓頂。</span>
+        <div class="vlinks">
+          <a class="vlink" href="https://youtu.be/vsiOxHxX5t8?t=756" target="_blank" rel="noopener">▶ <b>12:36</b> 透視法與比例</a>
+          <a class="vlink" href="https://youtu.be/vsiOxHxX5t8?t=807" target="_blank" rel="noopener">▶ <b>13:27</b> 聖彼得大教堂穹頂</a>
+        </div>
+      </div>
+      <div class="t">
+        <b>巴洛克與洛可可｜17–18世紀</b>
+        <span>從理性轉回感性：曲面、橢圓、雙柱、鍍金與天頂畫營造視覺盛宴，聖彼得廣場向心式柱廊就是貝尼尼的巴洛克手筆——對應 NODE 04 壁畫與穹頂畫。洛可可則是巴洛克的輕盈版，多見於宮廷室內。</span>
+        <div class="vlinks">
+          <a class="vlink" href="https://youtu.be/vsiOxHxX5t8?t=860" target="_blank" rel="noopener">▶ <b>14:20</b> 巴洛克：曲線與奢華</a>
+          <a class="vlink" href="https://youtu.be/vsiOxHxX5t8?t=960" target="_blank" rel="noopener">▶ <b>16:00</b> 洛可可：巴洛克的少女版</a>
+        </div>
+      </div>
+      <div class="t">
+        <b>新古典主義｜18世紀中–19世紀中</b>
+        <span>反對巴洛克與洛可可的奢靡，回歸理性、對稱與柱廊；主要用在國家機關、紀念堂而非教堂，代表如法國先賢祠、美國國會大廈。</span>
+        <div class="vlinks">
+          <a class="vlink" href="https://youtu.be/vsiOxHxX5t8?t=985" target="_blank" rel="noopener">▶ <b>16:25</b> 新古典主義：理性回歸</a>
+        </div>
+      </div>
+      <div class="t">
+        <b>歷史主義復興與現代主義｜19世紀之後</b>
+        <span>先是一波「復古熱」：哥德復興（倫敦議會大廈）、巴洛克復興（巴黎歌劇院）、摩爾復興；接著現代主義興起，主張功能至上、取消裝飾，形式從此變得極其多元。</span>
+        <div class="vlinks">
+          <a class="vlink" href="https://youtu.be/vsiOxHxX5t8?t=1069" target="_blank" rel="noopener">▶ <b>17:49</b> 哥德／巴洛克／摩爾復興</a>
+          <a class="vlink" href="https://youtu.be/vsiOxHxX5t8?t=1124" target="_blank" rel="noopener">▶ <b>18:44</b> 現代主義：功能至上</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="schism" style="background:#ebe8df">
+  <div class="wrap">
+    <div class="sec-title">
+      <h2>在插件之前，先看教派怎麼分岔</h2>
+      <p>天主教、東正教、新教／路德宗、聖公會不是四個平行存在的宗派，而是同一棵樹上先後岔開的四條枝幹。看懂分岔的順序，才知道為什麼「圓頂」「彩窗」這些節點會先共用、後來才各自演化。</p>
+    </div>
+    <div class="schism">
+      <div class="schism-scroll">
+        <svg viewBox="0 0 1180 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="天主教、東正教、新教路德宗、聖公會分裂時間軸示意圖">
+          <style>
+            text{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif}
+            .yr{font-size:15px;font-weight:800;fill:#14202b}
+            .desc{font-size:12.5px;fill:#5c6974}
+            .endlabel{font-size:14.5px;font-weight:700;fill:#14202b}
+          </style>
+
+          <g stroke="#d9d5ca" stroke-width="1" stroke-dasharray="4 4">
+            <line x1="90" y1="42" x2="90" y2="360"/>
+            <line x1="340" y1="42" x2="340" y2="360"/>
+            <line x1="580" y1="42" x2="580" y2="360"/>
+            <line x1="720" y1="42" x2="720" y2="360"/>
+            <line x1="1060" y1="42" x2="1060" y2="360"/>
+          </g>
+
+          <path d="M90,220 L340,220" fill="none" stroke="#173f55" stroke-width="5" stroke-linecap="round"/>
+          <path d="M340,220 C400,220 400,150 460,150 L580,150" fill="none" stroke="#245d78" stroke-width="5" stroke-linecap="round"/>
+          <path d="M340,220 C400,220 400,330 460,330 L1060,330" fill="none" stroke="#8d493c" stroke-width="5" stroke-linecap="round"/>
+          <path d="M580,150 L720,150" fill="none" stroke="#245d78" stroke-width="5" stroke-linecap="round"/>
+          <path d="M580,150 C640,150 640,70 700,70 L1060,70" fill="none" stroke="#b4945c" stroke-width="5" stroke-linecap="round"/>
+          <path d="M720,150 L1060,150" fill="none" stroke="#245d78" stroke-width="5" stroke-linecap="round"/>
+          <path d="M720,150 C780,150 780,210 840,210 L1060,210" fill="none" stroke="#6f8d7a" stroke-width="5" stroke-linecap="round"/>
+
+          <circle cx="90" cy="220" r="6" fill="#173f55"/>
+          <circle cx="340" cy="220" r="7" fill="#173f55"/>
+          <circle cx="580" cy="150" r="7" fill="#245d78"/>
+          <circle cx="720" cy="150" r="7" fill="#245d78"/>
+
+          <text x="90" y="20" class="yr" text-anchor="start">33</text>
+          <text x="90" y="36" class="desc" text-anchor="start">使徒時代．早期教會</text>
+
+          <text x="340" y="20" class="yr" text-anchor="middle">1054</text>
+          <text x="340" y="36" class="desc" text-anchor="middle">東西教會大分裂</text>
+
+          <text x="580" y="20" class="yr" text-anchor="middle">1517</text>
+          <text x="580" y="36" class="desc" text-anchor="middle">馬丁路德宗教改革</text>
+
+          <text x="720" y="20" class="yr" text-anchor="middle">1534</text>
+          <text x="720" y="36" class="desc" text-anchor="middle">英格蘭國教會成立</text>
+
+          <text x="1060" y="20" class="yr" text-anchor="end">今日</text>
+          <text x="1060" y="36" class="desc" text-anchor="end">四大教派並存</text>
+
+          <circle cx="1060" cy="70" r="5" fill="#b4945c"/>
+          <text x="1075" y="75" class="endlabel">新教／路德宗</text>
+          <circle cx="1060" cy="150" r="5" fill="#245d78"/>
+          <text x="1075" y="155" class="endlabel">天主教</text>
+          <circle cx="1060" cy="210" r="5" fill="#6f8d7a"/>
+          <text x="1075" y="215" class="endlabel">聖公會</text>
+          <circle cx="1060" cy="330" r="5" fill="#8d493c"/>
+          <text x="1075" y="335" class="endlabel">東正教</text>
+        </svg>
+      </div>
+      <p class="schism-note">示意時間軸，橫軸比例經過調整以方便閱讀，非等比例尺。核心脈絡：早期教會 → 1054 年東西教會大分裂出東正教 → 西方天主教到 16 世紀再岔出新教／路德宗（1517）與聖公會（1534）。</p>
+      <div style="margin-top:14px">
+        <p class="clip" style="margin-bottom:6px">影片節點連結：</p>
+        <div class="vlinks">
+          <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=650" target="_blank" rel="noopener">▶ <b>10:50</b> 東正教中心：君士坦丁堡</a>
+          <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=1450" target="_blank" rel="noopener">▶ <b>24:10</b> 宗教改革後新教趨於簡樸</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="matrix">
+  <div class="wrap">
+    <div class="sec-title">
+      <h2>把六個節點，插到四種教派身上</h2>
+      <p>同一個節點，換一個教派插槽，長出來的樣子完全不同。這張表把六個節點橫向攤開，直接比對天主教、東正教、新教／路德宗、聖公會的常見表現。</p>
+    </div>
+    <div class="matrix">
+      <table>
+        <thead><tr><th>節點</th><th>天主教</th><th>東正教</th><th>新教／路德宗</th><th>聖公會</th></tr></thead>
+        <tbody>
+          <tr><td>尖塔／鐘樓</td><td>哥德尖塔、巴洛克鐘樓冠頂</td><td>洋蔥頂鐘塔，常與主圓頂群並列</td><td>簡潔尖塔，或如磐石教堂完全取消塔樓</td><td>英式哥德方形塔樓為主</td></tr>
+          <tr><td>圓頂</td><td>文藝復興／巴洛克大圓頂（聖伯多祿大殿）</td><td>多圓頂、拜占庭式中央圓頂，金色或深色</td><td>可有可無；現代設計常改用環形天窗</td><td>較少作為主視覺，偶見於仿古典設計</td></tr>
+          <tr><td>彩窗</td><td>玫瑰窗＋聖經敘事，色彩華麗</td><td>較少大面積彩窗，光線多來自圓頂鼓座</td><td>簡化或透明玻璃，強調自然光而非圖像</td><td>常保留哥德彩窗傳統</td></tr>
+          <tr><td>壁畫／穹頂畫</td><td>大量具象壁畫、天頂畫（西斯汀禮拜堂）</td><td>聖像畫、聖像屏風，風格程式化</td><td>幾乎沒有具象壁畫，牆面留白</td><td>介於天主教與新教之間，視教堂而定</td></tr>
+          <tr><td>立面浮雕</td><td>羅馬式敘事浮雕、巴洛克雕像立面</td><td>立面裝飾集中在圓頂與馬賽克，浮雕較少</td><td>立面極簡，甚至以天然材質（岩壁）為立面</td><td>哥德式立面雕刻，但量體不及天主教</td></tr>
+          <tr><td>平面格局／功能</td><td>拉丁十字平面，常兼作王室加冕、墓葬地</td><td>集中式平面＋聖像屏風分隔至聖所</td><td>會眾廳式平面，講台與聖壇並重</td><td>拉丁十字平面，功能較接近天主教傳統</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top:16px">
+      <p class="clip" style="margin-bottom:6px">影片節點連結：</p>
+      <div class="vlinks">
+        <a class="vlink" href="https://youtu.be/-LvvLj5Qeug?t=1450" target="_blank" rel="noopener">▶ <b>24:10</b> 宗教改革後，新教教堂趨於簡樸</a>
+      </div>
+    </div>
+
+    <div class="charts">
+      <figure class="chart-card">
+        <img src="images/roof-guide.jpg" alt="看屋頂猜教派：教堂快速辨認圖">
+        <figcaption><b>看屋頂猜教派快速辨認圖</b>AI 繪製的參考圖卡，把「立面浮雕」「尖塔鐘樓」兩個節點在天主教、東正教、新教、聖公會四種插槽下的常見組合整理成一張圖；僅供初步判讀，仍需搭配名稱與室內配置交叉確認。</figcaption>
+      </figure>
+      <figure class="chart-card">
+        <img src="images/onion-dome.jpg" alt="洋蔥屋頂是什麼派：東正教 vs 天主教巴洛克對照圖">
+        <figcaption><b>洋蔥屋頂對照圖</b>針對「圓頂」節點的專題對照：洋蔥形屋頂在東正教最典型（多圓頂、金色或深藍色），但天主教巴洛克教堂的單一鐘樓冠頂偶爾也會出現類似曲線，不能單靠洋蔥頂直接判定教派。</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="finland" style="background:#ebe8df">
+  <div class="wrap">
+    <div class="sec-title">
+      <h2>拿芬蘭赫爾辛基做真實驗證</h2>
+      <p>芬蘭位在西方拉丁基督教與東方正教傳統的交界，六個節點在同一座城市裡就能找到三種完全不同的插法——最好的驗證場地。</p>
+    </div>
+
+    <div class="timeline">
+      <div class="t"><b>中世紀：西方天主教傳入</b><span>芬蘭在瑞典王國體系下，主要進入西方拉丁教會傳統；圖爾庫主教座堂成為重要宗教中心。</span></div>
+      <div class="t"><b>16 世紀宗教改革：路德宗成為主流</b><span>瑞典王國接受宗教改革後，芬蘭的教會也轉入路德宗傳統，「壁畫與彩窗」節點從此走向簡樸化。</span></div>
+      <div class="t"><b>東芬蘭與卡累利阿：正教傳統由東方傳入</b><span>正教信仰早在中世紀即由諾夫哥羅德與卡累利阿方向傳入東芬蘭，帶來「圓頂」節點的東方插法。</span></div>
+      <div class="t"><b>1809–1917：俄羅斯帝國的芬蘭大公國</b><span>赫爾辛基出現更具城市地標性的東正教建築；Uspenski Cathedral 於 1868 年祝聖。</span></div>
+      <div class="t"><b>20 世紀：現代主義重寫節點</b><span>「立面浮雕」節點被整個拿掉，改用天然岩壁；「圓頂」節點也從石造穹頂變成一圈銅環天窗——磐石教堂就是代表。</span></div>
+    </div>
+
+    <div style="height:20px"></div>
+
+    <article class="case">
+      <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Senate%20Square%20and%20Lutheran%20Cathedral%20in%20Helsinki.jpg" alt="赫爾辛基主教座堂"></div>
+      <div>
+        <div class="kicker">WHITE CATHEDRAL · 白教堂</div>
+        <h3>Helsinki Cathedral<br>赫爾辛基主教座堂</h3>
+        <div class="meta"><span class="pill">路德宗</span><span class="pill">新古典主義</span><span class="pill">1852</span><span class="pill node-pill">節點：圓頂＋尖塔</span></div>
+        <p>由 Carl Ludvig Engel 設計並由 Ernst Lohrmann 延續完成。中央綠色圓頂、四角小圓頂、古典柱列與巨大階梯，形成赫爾辛基最具代表性的城市輪廓。</p>
+        <p class="clue"><b>節點插件觀察：</b><br>「圓頂」節點在這裡被插進路德宗插槽，卻長成天主教／新古典式的巨大穹頂——證明圓頂不是東正教或天主教的專利，是可以跨教派移動的零件。</p>
+      </div>
+    </article>
+
+    <article class="case">
+      <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Uspensky%20Cathedral%20Helsinki.jpg" alt="烏斯佩斯基大教堂"></div>
+      <div>
+        <div class="kicker">RED CATHEDRAL · 紅教堂</div>
+        <h3>Uspenski Cathedral<br>烏斯佩斯基大教堂</h3>
+        <div class="meta"><span class="pill">東正教</span><span class="pill">俄羅斯—拜占庭</span><span class="pill">1868</span><span class="pill node-pill">節點：圓頂＋立面浮雕</span></div>
+        <p>紅磚外牆、金色圓頂與高度裝飾化的輪廓。教堂由俄羅斯建築師 Aleksei Gornostajev 設計，建於芬蘭仍是俄羅斯帝國自治大公國的年代。</p>
+        <p class="clue"><b>節點插件觀察：</b><br>多個洋蔥圓頂＋馬賽克裝飾＋內部聖像屏風，三個節點同時指向東正教插槽，是本頁裡「節點特徵最集中」的一個案例。</p>
+      </div>
+    </article>
+
+    <article class="case">
+      <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Temppeliaukio%20church%20interior.jpg" alt="磐石教堂室內"></div>
+      <div>
+        <div class="kicker">ROCK CHURCH · 磐石教堂</div>
+        <h3>Temppeliaukio Church<br>磐石教堂</h3>
+        <div class="meta"><span class="pill">路德宗</span><span class="pill">現代主義</span><span class="pill">1969</span><span class="pill node-pill">節點：立面浮雕（移除）＋圓頂（改造）</span></div>
+        <p>由 Timo 與 Tuomo Suomalainen 兄弟設計，教堂直接鑿入天然岩盤；粗獷岩壁、銅製圓頂與環狀天窗取代傳統外牆與鐘塔。</p>
+        <p class="clue"><b>節點插件觀察：</b><br>「立面浮雕」節點被直接拔掉，換成裸露岩壁；「圓頂」節點保留但材質換成銅環天窗。同屬路德宗，卻和白教堂用了完全不同的節點組合——教派相同，不代表節點組裝方式必須相同。</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="method" style="background:#e6ecec">
+  <div class="wrap">
+    <div class="sec-title">
+      <h2>真正好用的判讀順序</h2>
+      <p>如果旅行時看到一座陌生教堂，建議照這個順序判斷節點與教派的關係，而不是從屋頂開始就下結論。</p>
+    </div>
+    <div class="split">
+      <div class="good">
+        <h3>✓ 五層線索一起看</h3>
+        <ol>
+          <li><b>教堂正式名稱與所屬教會</b>：最可靠。</li>
+          <li><b>十字架形式</b>：東西方傳統常有差異。</li>
+          <li><b>室內祭壇、講台、聖像與聖像屏風</b>：「壁畫」節點的落地方式。</li>
+          <li><b>建造年代與當時統治政權</b>：解釋節點為何被選用。</li>
+          <li><b>最後才把屋頂、尖塔、圓頂當成輔助線索</b>：「尖塔」與「圓頂」節點最容易跨教派移動。</li>
+        </ol>
+      </div>
+      <div class="warn">
+        <h3>✕ 最常見的三個誤判</h3>
+        <p>「洋蔥頂＝一定東正教」不成立；巴洛克西方教堂的鐘樓冠頂也可能出現類似曲線。</p>
+        <p>「哥德尖塔＝一定天主教」不成立；聖公會與路德宗也大量使用「尖塔」節點。</p>
+        <p>「外觀簡潔＝一定新教」也不成立；現代天主教、東正教都可能拿掉「立面浮雕」節點改用極簡設計。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="quote">「語彙是共通的，<br>信仰只是各自把它說成自己的故事。」</p>
+    <div style="height:54px"></div>
+    <div class="sources">
+      <b>主要資料來源：</b>
+      <a href="https://youtu.be/-LvvLj5Qeug" target="_blank">《30分鐘看懂歐洲教堂｜讀懂教堂｜歐洲建築史》／小白豆干看世界（YouTube）</a> ·
+      <a href="https://youtu.be/vsiOxHxX5t8" target="_blank">《西方建築風格速通！一眼識別各種建築風格，歐洲旅行不發愁！》／小鳴說（YouTube）</a> ·
+      <a href="https://www.helsinginseurakunnat.fi/en/artikkelit/esed2f4rd" target="_blank">Helsinki Cathedral / Lutheran Church in Helsinki</a> ·
+      <a href="https://www.hos.fi/en/uspenski-cathedral-main-cathedral-of-the-orthodox-parish-of-helsinki-and-the-diocese-of-helsinki/" target="_blank">Uspenski Cathedral / Orthodox Parish of Helsinki</a> ·
+      <a href="https://www.helsinginseurakunnat.fi/artikkelit/touristinformation" target="_blank">Temppeliaukio Church / Helsinki Parishes</a> ·
+      <a href="https://evl.fi/en/our-faith/lutheranism-in-finland/history/" target="_blank">Evangelical Lutheran Church of Finland — History</a> ·
+      <a href="https://ort.fi/en/finnish-orthodox-church/" target="_blank">Orthodox Church of Finland — History</a>.
+      <br><br>照片：赫爾辛基三教堂與歐洲案例圖片來自 Wikimedia Commons，授權請依原始檔案頁標示；「看屋頂猜教派」與「洋蔥屋頂對照圖」兩張圖卡為 AI 生成之整理示意圖，僅作快速判讀輔助，非學術考據。
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">教堂建築節點 × 教派插件 × 芬蘭實測｜繁體中文互動閱讀頁</div>
+</footer>
+</body>
+</html>
